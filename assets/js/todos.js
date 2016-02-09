@@ -20,6 +20,12 @@ $("input[type='text'").keypress(function(event){
 		$(this).val("");
 
 		//Add text to bottom of list
-		$("ul").append("<li><span>x</span> " + todoText + "</li>")
+		$("ul").append("<li><span><i class='fa fa-trash'></i></span> " + todoText + "</li>")
 	}
+});
+
+$(".fa-angle-double-up").click(function(){
+	$("input[type='text'").fadeToggle();
+	$(this).toggleClass("rotate", 1000);
+
 });
